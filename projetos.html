@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Projetos / Gabriel Ramos</title>
+    <link rel="stylesheet" href="/css/projetos.css">
+    <link rel="icon" type="image/png" href="img/Logo.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="particulas"></div>
+
+    <nav class="navegacao">
+        <ul class="menu">
+            <li>
+                <a href="index.html" class="menu-link">Home</a>
+            </li>
+
+            <li>
+                <a href="projetos.html" class="menu-link">Projetos</a>
+            </li>
+
+            <li>
+                <a href="curriculo.html" class="menu-link">Curriculo</a>
+            </li>
+
+            <li>
+                <a href="contato.html" class="menu-link">Contato</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulo">Alguns Projetos feitos por mim!</h2>
+        <div class="projetos-caixa">
+            <div class="projetos-card">
+                <div class="carousel">
+                    <button class="carousel-btn left">&#8592;</button>
+                    <img src="./img/image.png" class="projetos-imagem">
+                    <img src="./img/imagecal2.png" class="projetos-imagem">
+                    <img src="./img/imagecal3.png" class="projetos-imagem">
+                    <img src="./img/imagecal4.png" class="projetos-imagem">
+                    <button class="carousel-btn right">&#8594;</button>
+                </div>
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projetos">Calculadora IMC</h3>
+                    <p class="paragrafo-projetos">Aplicação desenvolvida para calcular o Índice de Massa Corporal (IMC)
+                        do usuário com base na altura e peso informados. Após o cálculo, o sistema exibe a classificação
+                        do IMC (como "Abaixo do peso", "Normal", "Sobrepeso", etc.) conforme os padrões da OMS.</p>
+                </div>
+
+            </div>
+
+            <div class="projetos-card">
+                <div class="carousel">
+                    <img src="./img/image1.png" alt="" class="projetos-imagem">
+                    <img src="" alt="">
+                </div>
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projetos">CineFilmes</h3>
+                    <p class="paragrafo-projetos">Plataforma de streaming inspirada na Netflix, onde usuários podem
+                        navegar, buscar e assistir trailers de filmes e séries. Possui interface moderna, categorias
+                        organizadas por gênero, sistema de login e exibição dinâmica de conteúdos com layout responsivo.
+                    </p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <div class="carousel">
+                    <button class="carousel-btn left">&#8592;</button>
+                    <img src="./img/imagexpd.png" alt="" class="projetos-imagem">
+                    <img src="./img/imagexp1.png" alt="" class="projetos-imagem">
+                    <img src="./img/imagexpd2.png" alt="" class="projetos-imagem">
+                    <img src="./img/imagexpd3.png" alt="" class="projetos-imagem">
+                    <img src="./img/imagexpd4.png" alt="" class="projetos-imagem">
+                    <img src="./img/imagelogin.png" alt="" class="projetos-imagem">
+                    <button class="carousel-btn right">&#8594;</button>
+                </div>
+
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projetos">Expedição Motoboy</h3>
+                    <p class="paragrafo-projetos">Este sistema busca organizar de forma eficiente o processo de
+                        expedição por motoboys, permitindo que supervisores tenham uma visão completa das entregas e
+                        motoboys, enquanto os próprios entregadores conseguem acompanhar suas atividades em tempo real.
+                        Tudo isso com segurança, performance e uma boa experiência de uso.
+                    </p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <div class="carousel">
+                    <button class="carousel-btn left">&#8592;</button>
+                    <img src="./img/imageFood3.png" alt="" class="projetos-imagem">
+                    <img src="./img/imageFood2.png" alt="" class="projetos-imagem">
+                    <img src="./img/imageFood.png" alt="" class="projetos-imagem">
+                    <button class="carousel-btn right">&#8594;</button>
+                </div>
+
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projetos">Food Express</h3>
+                    <p class="paragrafo-projetos">Página de apresentação desenvolvida para um serviço de delivery de
+                        comidas, com layout moderno, responsivo e visual atrativo. A landing page exibe as seções
+                        principais: introdução com chamada de ação, cardápio dinâmico com produtos, avaliações de
+                        clientes e links para contato.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="acesso-github">
+        <h2>Acesse o Github!</h3>
+        <a href="https://github.com/GabrielSaRamos" class="link-github" target="_blank">
+            <i class="fa-brands fa-github" style="color: #fff; font-size: 3rem;"></i>
+        </a>
+    </div>
+
+    <script>
+        // Expansão dos projetos
+        document.querySelectorAll('.projetos-card').forEach(card => {
+            card.addEventListener('click', function (e) {
+                // Evita expandir se já estiver expandido (fecha ao clicar novamente)
+
+                if (card.classList.contains('expandido')) {
+                    card.classList.remove('expandido');
+                    document.body.style.overflow = '';
+                } else {
+                    // Fecha outros cards abertos
+                    document.querySelectorAll('.projetos-card').forEach(c => c.classList.remove('expandido'));
+                    card.classList.add('expandido');
+                    document.body.style.overflow = 'hidden';
+                }
+            });
+        });
+
+        document.addEventListener('click', function (e) {
+            const aberto = document.querySelector('.projetos-card.expandido');
+            if (aberto && !aberto.contains(e.target) && !e.target.classList.contains('projetos-card')) {
+                aberto.classList.remove('expandido');
+                document.body.style.overflow = '';
+            }
+        })
+
+        // Carrossel de imagens
+        document.querySelectorAll('.carousel').forEach(carousel => {
+            const images = carousel.querySelectorAll('.projetos-imagem');
+            let current = 0;
+
+            function showImage(idx) {
+                images.forEach((img, i) => {
+                    img.classList.toggle('active', i === idx);
+                });
+            }
+
+            const btnLeft = carousel.querySelector('.carousel-btn.left');
+            const btnRight = carousel.querySelector('.carousel-btn.right');
+
+            if (btnLeft && btnRight) {
+                btnLeft.addEventListener('click', e => {
+                    e.stopPropagation();
+                    current = (current - 1 + images.length) % images.length;
+                    showImage(current);
+                });
+
+                btnRight.addEventListener('click', e => {
+                    e.stopPropagation();
+                    current = (current + 1) % images.length;
+                    showImage(current);
+                });
+            }
+
+            showImage(current);
+        });
+
+    </script>
+
+</body>
+
+</html>

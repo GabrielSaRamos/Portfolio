@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato / Gabriel Ramos </title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" type="image/png" href="img/Logo.png">
+</head>
+
+<body>
+
+    <div class="particulas"></div>
+
+    <nav class="navegacao">
+        <ul class="menu">
+            <li>
+                <a href="index.html" class="menu-link">Home</a>
+            </li>
+
+            <li>
+                <a href="projetos.html" class="menu-link">Projetos</a>
+            </li>
+
+            <li>
+                <a href="curriculo.html" class="menu-link">Curriculo</a>
+            </li>
+
+            <li>
+                <a href="contato.html" class="menu-link">Contato</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section id="contatos" class="contatos">
+        <h2 class="contatos-titulo">Entre em Contato!</h2>
+        <p class="contatos-paragrafo" style="font-size: 1.3rem;">Se você estiver interessado em discutir uma oportunidade de trabalho ou apenas
+            quer
+            conversar, sinta-se à vontade para entrar em contato comigo através do formulário abaixo.
+        </p>
+
+        <form action="" class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
+            <div class="grupo-form">
+                <input type="text" name="nome" id="nome" placeholder="Nome" required class="campo-form">
+            </div>
+
+            <div class="grupo-form">
+                <textarea placeholder="Digite sua mensagem" class="campo-form" id="mensagem" rows="5"></textarea>
+            </div>
+
+            <button type="submit" class="botao-form">Enviar WhatsApp</button>
+        </form>
+    </section>
+
+    <script>
+        function enviarWhats(event) {
+            event.preventDefault(); // Evitar que a tela seja recarregada
+            const nome = document.getElementById('nome').value;
+            const mensagem = document.getElementById('mensagem').value;
+            const telefone = '5511968429516';
+
+            const texto = `Olá, meu nome é ${nome} e minha mensagem é: ${mensagem}`;
+            const msgFormatada = encodeURIComponent(texto);
+
+            const url = `https://wa.me/${telefone}?text=${msgFormatada}`;
+
+            window.open(url, '_blank');
+        };
+
+    </script>
+
+</body>
+
+</html>

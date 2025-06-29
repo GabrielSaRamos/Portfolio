@@ -4,31 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gabriel Ramos / Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Home / Gabriel Ramos</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="img/Logo.png">
+
 </head>
 
 <body>
 
     <div class="particulas"></div>
 
-
     <nav class="navegacao">
         <ul class="menu">
             <li>
-                <a href="#inicio" class="menu-link">Início</a>
+                <a href="index.html" class="menu-link">Home</a>
             </li>
 
             <li>
-                <a href="#sobre" class="menu-link">Sobre</a>
+                <a href="projetos.html" class="menu-link">Projetos</a>
             </li>
 
             <li>
-                <a href="#projetos" class="menu-link">Projetos</a>
+                <a href="curriculo.html" class="menu-link">Curriculo</a>
             </li>
 
             <li>
-                <a href="#contato" class="menu-link">Contato</a>
+                <a href="contato.html" class="menu-link">Contato</a>
             </li>
         </ul>
     </nav>
@@ -38,88 +44,59 @@
         <img src="./img/1726100430783.jpg" alt="" class="foto-perfil">
         <h1>Gabriel De Sá Ramos</h1>
         <p class="cabecalho-sub-titulo">Desenvolvedor Full Stack</p>
-
     </main>
 
-    <section id="sobre" class="sobre">
-        <h2 class="sobre-titulo">Sobre mim</h2>
-        <div class="sobre-caixa">
-            <p class="sobre-paragrafo">
-                Ola, meu nome é Gabriel De Sá Ramos, tenho 21 anos e sou um desenvolvedor Full Stack.
-                Atualmente, sou Formado em Análise e Desenvolvimento de Sistemas na Universidade de Sorocaba (FACENS) e
-                estou em busca de uma oportunidade para iniciar minha carreira profissional.
-                Tenho experiência em desenvolvimento web, incluindo HTML, CSS, JavaScript, TypeScript e frameworks como
-                React e Node.js. Além disso, possuo habilidades em banco de dados, como MySQL.
-            </p>
-        </div>
-    </section>
+    <div class="sobre-redes-container">
+        <section id="sobre" class="sobre">
+            <h2 class="sobre-titulo">Destaque seu negócio no digital <p style="color: #7c3aed;">com uma experiência
+                    completa e de excelência!</p>
+            </h2>
+            <div class="sobre-caixa">
+                <p class="sobre-paragrafo">
+                    Olá! Meu nome é Gabriel De Sá Ramos, tenho 21 anos e sou desenvolvedor Full Stack. Sou formado em
+                    Análise e Desenvolvimento de Sistemas pela FACENS (Faculdade de Engenharia de Sorocaba) e tenho
+                    amplo conhecimento em diversas tecnologias do mercado. Tenho paixão por transformar ideias em
+                    soluções reais, ajudando pequenos negócios e designers a tirarem seus projetos do papel com
+                    qualidade, eficiência e inovação.
+            </div>
+        </section>
 
-    <section id="projetos" class="projetos">
-        <h2 class="projetos-titulo">Projetos</h2>
-        <div class="projetos-caixa">
-            <div class="projetos-card">
-                <img src="./img/image.png" alt="" class="projetos-imagem">
-                <div class="caixa-textos-projeto">
-                    <h3 class="info-projetos">Loja de ...</h3>
-                    <p class="paragrafo-projetos">..................</p>
-                </div>
+        <section class="redes">
+            <h2 class="redes-titulo">Minhas Redes:</h2>
+
+            <div class="redes-contatos">
+                <a href="https://www.linkedin.com/in/gabriel-de-sá-ramos/" style="text-decoration: none;">
+                    <div class="redes-caixa">
+                        <i class="fa-brands fa-linkedin" style="color: #105ee5; font-size: 2rem;"></i>
+                        <p>Linkedin</p>
+                    </div>
+                </a>
+
+
+                <a href="https://github.com/GabrielSaRamos" style="text-decoration: none;">
+                    <div class="redes-caixa">
+                        <i class="fa-brands fa-github" style="color: #fff; font-size: 2rem;"></i>
+                        <p>Github</p>
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/gabriel_sa99/" style="text-decoration: none;">
+                    <div class="redes-caixa">
+                        <i class="fa-brands fa-instagram instagram-gradient" style="font-size: 2rem;"></i>
+                        <p>Instagram</p>
+                    </div>
+
+                </a>
+
 
             </div>
 
-            <div class="projetos-card">
-                <img src="./img/image1.png" alt="" class="projetos-imagem">
-                <div class="caixa-textos-projeto">
-                    <h3 class="info-projetos">Loja de ...</h3>
-                    <p class="paragrafo-projetos">..................</p>
-                </div>
-            </div>
+        </section>
+    </div>
 
-            <div class="projetos-card">
-                <img src="./img/image2.png" alt="" class="projetos-imagem">
-                <div class="caixa-textos-projeto">
-                    <h3 class="info-projetos">Loja de ...</h3>
-                    <p class="paragrafo-projetos">..................</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contatos" class="contatos">
-        <h2 class="contatos-titulo">Entre em Contato!</h2>
-        <p class="contatos-paragrafo">Se você estiver interessado em discutir uma oportunidade de trabalho ou apenas
-            quer
-            conversar, sinta-se à vontade para entrar em contato comigo através do formulário abaixo.
-        </p>
-
-        <form action="" class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
-            <div class="grupo-form">
-                <input type="text" name="nome" id="nome" placeholder="Nome" required class="campo-form">
-            </div>
-
-            <div class="grupo-form">
-                <textarea placeholder="Digite sua mensagem" class="campo-form" id="mensagem" rows="5"></textarea>
-            </div>
-
-            <button type="submit" class="botao-form">Enviar WhatsApp</button>
-        </form>
-    </section>
-
-    <script>
-        function enviarWhats(event) {
-            event.preventDefault(); // Evitar que a tela seja recarregada
-            const nome = document.getElementById('nome').value;
-            const mensagem = document.getElementById('mensagem').value;
-            const telefone = '5511968429516';
-
-            const texto = `Olá, meu nome é ${nome.value} e minha mensagem é: ${mensagem.value}`;
-            const msgFormatada = encodeURIComponent(texto);
-
-            const url = `https://wa.me/${telefone}?text=${msgFormatada}`;
-
-            window.open(url, '_blank');
-        }
-
-    </script>
+    <footer>
+        <p class="footer-text">Desenvolvido por Gabriel De Sá Ramos</p>
+    </footer>
 
 </body>
 
