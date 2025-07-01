@@ -22,9 +22,7 @@ Aqui você encontra uma seleção dos meus principais projetos, experiências pr
 ---
 
 ## 🔗 Contato
-
-- 📧 E-mail: [seu-email@email.com](mailto:seu-email@email.com)
-- 💼 [LinkedIn](https://www.linkedin.com/in/gabrieldevramos)
+- 💼 [LinkedIn](https://www.linkedin.com/in/gabriel-de-sá-ramos/)
 - 🌐 [Site/Portfólio](https://gabrieldevramos.com.br)
 
 ---
